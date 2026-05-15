@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -19,6 +20,27 @@ body {
   margin: auto;
   background: white;
   padding: 20px;
+}
+
+/* 検索欄 */
+.search-box {
+  margin: 20px 0 30px;
+}
+
+#searchInput {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px;
+  font-size: 16px;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* タイトル */
+.section-title {
+  margin-top: 40px;
 }
 
 /* 常に2列 */
@@ -68,8 +90,15 @@ body {
   color: #555;
 }
 
+/* 検索ヒット時 */
+.highlight {
+  outline: 3px solid #87cefa;
+  border-radius: 12px;
+}
 
+/* スマホ */
 @media (max-width: 480px) {
+
   .icon {
     width: 44px;
     height: 44px;
@@ -82,20 +111,31 @@ body {
   .text p {
     font-size: 12px;
   }
+
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
+
   <a href="index.html">トップへ</a> ＞
 
   <h1>キャラクター一覧</h1>
+
   <p>自創作キャラクターいっきみ用</p>
+
+  <!-- 検索欄 -->
+  <div class="search-box">
+    <input type="text" id="searchInput"
+    placeholder="キャラ名・作品名で検索">
+  </div>
 
 <hr>
 
-<h2>エンドロールは笑顔とともに</h2>
+<h2 class="section-title">エンドロールは笑顔とともに</h2>
+
 <div class="card-list">
 
   <a href="char1.html" class="card">
@@ -164,7 +204,8 @@ body {
 
 </div>
 
-<h2>天晴れ！学校征服定例会議！</h2>
+<h2 class="section-title">天晴れ！学校征服定例会議！</h2>
+
 <div class="card-list">
 
   <a href="hareya.html" class="card">
@@ -175,7 +216,7 @@ body {
     </div>
   </a>
 
-   <a href="rei.html" class="card">
+  <a href="rei.html" class="card">
     <img src="rei1.jpeg" class="icon">
     <div class="text">
       <h3>杜若怜</h3>
@@ -183,7 +224,7 @@ body {
     </div>
   </a>
 
-   <a href="kisaki.html" class="card">
+  <a href="kisaki.html" class="card">
     <img src="kisaki1.jpeg" class="icon">
     <div class="text">
       <h3>鈴瑞ヶ咲妃</h3>
@@ -191,7 +232,7 @@ body {
     </div>
   </a>
 
-   <a href="ruka.html" class="card">
+  <a href="ruka.html" class="card">
     <img src="ruka1.jpeg" class="icon">
     <div class="text">
       <h3>泉瑠夏</h3>
@@ -199,7 +240,7 @@ body {
     </div>
   </a>
 
-   <a href="yuri.html" class="card">
+  <a href="yuri.html" class="card">
     <img src="yuri1.jpeg" class="icon">
     <div class="text">
       <h3>三陰由利</h3>
@@ -207,7 +248,7 @@ body {
     </div>
   </a>
 
-   <a href="yuusei.html" class="card">
+  <a href="yuusei.html" class="card">
     <img src="yuusei1.jpeg" class="icon">
     <div class="text">
       <h3>金蜜優生</h3>
@@ -215,7 +256,7 @@ body {
     </div>
   </a>
 
-   <a href="sinn.html" class="card">
+  <a href="sinn.html" class="card">
     <img src="sinn1.jpeg" class="icon">
     <div class="text">
       <h3>古江田真</h3>
@@ -223,15 +264,15 @@ body {
     </div>
   </a>
 
-   <a href="mituru.html" class="card">
+  <a href="mituru.html" class="card">
     <img src="mituru1.jpeg" class="icon">
     <div class="text">
-      <h3> 靣光琉</h3>
+      <h3>靣光琉</h3>
       <p>演劇部照明局</p>
     </div>
   </a>
 
-   <a href="neneka.html" class="card">
+  <a href="neneka.html" class="card">
     <img src="neneka1.jpeg" class="icon">
     <div class="text">
       <h3>彩藤寧々香</h3>
@@ -239,7 +280,7 @@ body {
     </div>
   </a>
 
-   <a href="hiaki.html" class="card">
+  <a href="hiaki.html" class="card">
     <img src="hiaki1.jpeg" class="icon">
     <div class="text">
       <h3>泉ひあき</h3>
@@ -249,7 +290,8 @@ body {
 
 </div>
 
-<h2>愛おしき貴方へ ラクリマを</h2>
+<h2 class="section-title">愛おしき貴方へ ラクリマを</h2>
+
 <div class="card-list">
 
   <a href="sitera.html" class="card">
@@ -257,14 +299,6 @@ body {
     <div class="text">
       <h3>シテラ</h3>
       <p>フルールトップ。身勝手で性悪</p>
-    </div>
-  </a>
-
-  <a href="sitera.html" class="card">
-    <img src="sitera1.png" class="icon">
-    <div class="text">
-      <h3>シテラ</h3>
-      <p>フルーフトップ。身勝手で性悪</p>
     </div>
   </a>
 
@@ -323,9 +357,7 @@ body {
       <p>フルーフ第九冠</p>
     </div>
   </a>
-  </div>
 
-  <div class="card-list">
   <a href="m.html" class="card">
     <img src="m1.png" class="icon">
     <div class="text">
@@ -360,7 +392,8 @@ body {
 
 </div>
 
-<h2>その他</h2>
+<h2 class="section-title">その他</h2>
+
 <div class="card-list">
 
   <a href="dairi.html" class="card">
@@ -371,16 +404,88 @@ body {
     </div>
   </a>
 
-<a href="hanaka.html" class="card">
+  <a href="hanaka.html" class="card">
     <img src="hanaka1.png" class="icon">
     <div class="text">
       <h3>雅楽代花奏</h3>
       <p>盲目のピアニスト</p>
     </div>
   </a>
-  
+
 </div>
 
 </div>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keydown", function(event) {
+
+  if (event.key !== "Enter") return;
+
+  const keyword =
+    searchInput.value.trim().toLowerCase();
+
+  if (!keyword) return;
+
+  /* キャラ検索 */
+
+  const cards = document.querySelectorAll(".card");
+
+  for (const card of cards) {
+
+    const cardName =
+      card.querySelector("h3").innerText.toLowerCase();
+
+    if (cardName.includes(keyword)) {
+
+      card.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+
+      card.classList.add("highlight");
+
+      setTimeout(() => {
+        card.classList.remove("highlight");
+      }, 2000);
+
+      return;
+    }
+  }
+
+  /* タイトル検索 */
+
+  const titles =
+    document.querySelectorAll(".section-title");
+
+  for (const title of titles) {
+
+    const titleText =
+      title.innerText.toLowerCase();
+
+    if (titleText.includes(keyword)) {
+
+      title.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+      title.classList.add("highlight");
+
+      setTimeout(() => {
+        title.classList.remove("highlight");
+      }, 2000);
+
+      return;
+    }
+  }
+
+  alert("見つかりませんでした");
+
+});
+</script>
+
 </body>
 </html>
+```
