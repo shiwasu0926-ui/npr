@@ -8,10 +8,12 @@
 <meta name="robots" content="noindex, nofollow">
 
 <style>
+
 body {
   margin: 0;
   font-family: sans-serif;
   background: #f0f0f0;
+  color: #222;
 }
 
 .container {
@@ -20,27 +22,327 @@ body {
   background: white;
   padding: 20px;
 }
+
+/* 創作カード */
+
+.world-card {
+
+  background: #fafafa;
+
+  border-radius: 18px;
+
+  padding: 20px;
+  margin-bottom: 24px;
+
+  border: 1px solid #e5e5e5;
+
+  transition: 0.2s;
+}
+
+.world-card:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow:
+  0 6px 18px rgba(0,0,0,0.08);
+
+}
+
+/* タイトル部分リンク */
+
+.world-main {
+
+  display: block;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+/* タイトル */
+
+.world-title {
+
+  margin: 0 0 10px;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 説明 */
+
+.world-text {
+
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.8;
+
+  color: #666;
+}
+
+/* 線 */
+
+.world-line {
+
+  margin: 18px 0;
+
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* キャラ一覧 */
+
+.mini-character-list {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+/* ミニキャラカード */
+
+.mini-character {
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #f3f3f3;
+
+  border-radius: 999px;
+
+  padding: 6px 12px;
+
+  font-size: 13px;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: 0.2s;
+}
+
+.mini-character:hover {
+
+  background: #e8e8e8;
+
+  transform: translateY(-2px);
+}
+
+.mini-character img {
+
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
+
+.mini-character span {
+
+  white-space: nowrap;
+}
+
+/* etc */
+
+.mini-etc {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f3f3f3;
+
+  border-radius: 999px;
+
+  padding: 6px 12px;
+
+  font-size: 13px;
+  color: #666;
+}
+
+/* スマホ */
+
+@media (max-width: 600px) {
+
+  .container {
+    padding: 16px;
+  }
+
+  .world-card {
+    padding: 16px;
+  }
+
+  .world-title {
+    font-size: 20px;
+  }
+
+  .world-text {
+    font-size: 13px;
+  }
+
+  .mini-character {
+
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .mini-character img {
+
+    width: 24px;
+    height: 24px;
+  }
+
+}
+
 </style>
 </head>
 
 <body>
+
 <div class="container">
-  <a href="index.html">トップへ</a> ＞
-  
-  <h1>創作一覧</h1>
+
+<a href="index.html">トップへ</a> ＞
+
+<h1>創作一覧</h1>
 
 <hr>
- 
-<p><ul>
-<li> <a href="world1.html">エンドロールは笑顔とともに</a></li>
-</ul></p>
-  <p><ul>
-<li> <a href="world2.html">天晴れ！学校征服定例会議！</a></li>
-</ul></p>
-  <p><ul>
-<li> <a href="world3.html">愛おしき貴方へ ラクリマを</a></li>
-</ul></p>
+
+<!-- =========================
+エンドロール
+========================= -->
+
+<div class="world-card">
+
+  <a href="world1.html" class="world-main">
+
+    <h2 class="world-title">
+      エンドロールは笑顔とともに
+    </h2>
+
+    <p class="world-text">
+     元プロマジシャンの青年と、
+    彼を取り巻く人々による群像劇。
+    </p>
+
+  </a>
+
+  <hr class="world-line">
+
+  <div class="mini-character-list">
+
+    <a href="char1.html" class="mini-character">
+      <img src="char1.png">
+      <span>ショー</span>
+    </a>
+
+    <a href="emi.html" class="mini-character">
+      <img src="emi1.jpg">
+      <span>エミール</span>
+    </a>
+
+    <a href="demi.html" class="mini-character">
+      <img src="demi1.jpg">
+      <span>ヂェミス</span>
+    </a>
+
+    <a href="zyuwa.html" class="mini-character">
+      <img src="zyuwa.jpg">
+      <span>ジュワ―ラ</span>
+    </a>
+
+    <div class="mini-etc">
+      etc...
+    </div>
+
+  </div>
+
+</div>
+
+<!-- =========================
+学校征服
+========================= -->
+
+<div class="world-card">
+
+  <a href="world2.html" class="world-main">
+
+    <h2 class="world-title">
+      天晴れ！学校征服定例会議！
+    </h2>
+
+    <p class="world-text">
+      個性豊かな生徒会メンバー達による、
+      ドタバタ学園コメディ。
+    </p>
+
+  </a>
+
+  <hr class="world-line">
+
+  <div class="mini-character-list">
+
+    <a href="hareya.html" class="mini-character">
+      <img src="hareya1.jpeg">
+      <span>天國晴哉</span>
+    </a>
+
+    <a href="ruka.html" class="mini-character">
+      <img src="ruka1.jpeg">
+      <span>泉瑠夏</span>
+    </a>
+
+    <div class="mini-etc">
+      etc...
+    </div>
+
+  </div>
+
+</div>
+
+<!-- =========================
+ラクリマ
+========================= -->
+
+<div class="world-card">
+
+  <a href="world3.html" class="world-main">
+
+    <h2 class="world-title">
+      愛おしき貴方へ ラクリマを
+    </h2>
+
+    <p class="world-text">
+     虚構と現実を生きる人々の物語。
+    </p>
+
+  </a>
+
+  <hr class="world-line">
+
+  <div class="mini-character-list">
+
+    <a href="sitera.html" class="mini-character">
+      <img src="sitera1.png">
+      <span>シテラ</span>
+    </a>
+
+    <a href="zeru.html" class="mini-character">
+      <img src="zeru.png">
+      <span>ゼルディア</span>
+    </a>
 
 
+    <div class="mini-etc">
+      etc...
+    </div>
+
+  </div>
+
+</div>
+
+</div>
 </body>
 </html>
