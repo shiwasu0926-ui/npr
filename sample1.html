@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,182 +9,192 @@
 
 <style>
 
-body {
-  margin: 0;
-  background: #f0f0f0;
-  font-family: sans-serif;
-  color: #222;
+body{
+  margin:0;
+  background:#f0f0f0;
+  font-family:sans-serif;
+  color:#222;
 }
 
-.container {
+.container{
 
-  max-width: 900px;
+  max-width:900px;
 
-  margin: auto;
-  padding: 20px;
+  margin:auto;
+  padding:20px;
 
-  background: white;
+  background:white;
 
 }
 
-h1 {
+h1{
 
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin-top:0;
+  margin-bottom:25px;
 
-  font-size: 30px;
+  font-size:30px;
 
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
+  border-bottom:1px solid #ddd;
+  padding-bottom:10px;
 
 }
 
 /* 登場キャラ */
 
-.character-box {
+.character-box{
 
-  display: flex;
-  flex-direction: column;
+  display:flex;
+  flex-direction:column;
 
-  gap: 14px;
+  gap:14px;
 
-  margin-bottom: 50px;
-
-}
-
-.character-mini {
-
-  display: flex;
-  align-items: center;
-
-  gap: 12px;
-
-  padding: 12px 0;
-
-  border-top: 1px solid #ddd;
+  margin-bottom:50px;
 
 }
 
-.character-icon {
+.character-mini{
 
-  width: 60px;
-  height: 60px;
+  display:flex;
+  align-items:center;
 
-  border-radius: 50%;
+  gap:14px;
 
-  object-fit: cover;
+  padding:12px 0;
 
-  flex-shrink: 0;
-
-}
-
-.character-text {
-
-  line-height: 1.7;
+  border-top:1px solid #ddd;
 
 }
 
-.character-text a {
+.character-icon{
 
-  color: #222;
+  width:70px;
+  height:70px;
 
-  text-decoration: none;
-  font-size: 18px;
+  border-radius:50%;
+
+  object-fit:cover;
+
+  /* 顔を優先表示 */
+  object-position:center top;
+
+  flex-shrink:0;
 
 }
 
-.character-text a:hover {
+.character-text{
 
-  text-decoration: underline;
+  line-height:1.7;
+
+}
+
+.character-text a{
+
+  color:#222;
+
+  text-decoration:none;
+
+  font-size:18px;
+
+}
+
+.character-text a:hover{
+
+  text-decoration:underline;
 
 }
 
 /* 会話 */
 
-.chat-area {
+.chat-area{
 
-  display: flex;
-  flex-direction: column;
+  display:flex;
+  flex-direction:column;
 
-  gap: 22px;
+  gap:22px;
 
 }
 
 /* 左右共通 */
 
 .message-left,
-.message-right {
+.message-right{
 
-  display: flex;
-  align-items: flex-start;
+  display:flex;
+  align-items:flex-start;
 
-  gap: 10px;
+  gap:12px;
 
 }
 
-.message-right {
+.message-right{
 
-  justify-content: flex-end;
+  justify-content:flex-end;
 
 }
 
 /* アイコン */
 
-.icon {
+.icon{
 
-  width: 56px;
-  height: 56px;
+  width:64px;
+  height:64px;
 
-  border-radius: 50%;
+  border-radius:50%;
 
-  object-fit: cover;
+  object-fit:cover;
 
-  flex-shrink: 0;
+  /* 顔を優先表示 */
+  object-position:center top;
+
+  flex-shrink:0;
 
 }
 
 /* 名前 */
 
-.name {
+.name{
 
-  font-size: 12px;
-  color: #777;
+  font-size:13px;
 
-  margin-bottom: 4px;
+  font-weight:bold;
 
-  padding-left: 6px;
+  color:#666;
+
+  margin-bottom:6px;
 
 }
 
-.right-name {
+.right-name{
 
-  text-align: right;
-
-  padding-right: 6px;
-  padding-left: 0;
+  text-align:right;
 
 }
 
 /* 吹き出し */
 
-.bubble {
+.bubble{
 
-  background: white;
+  background:white;
 
-  border: 1px solid #e5e5e5;
+  border:1px solid #e5e5e5;
 
-  border-radius: 16px;
+  border-radius:16px;
 
-  padding: 14px 16px;
+  padding:14px 18px;
 
-  line-height: 1.8;
+  line-height:1.8;
 
-  max-width: 75%;
+  display:inline-block;
 
-  box-sizing: border-box;
+  max-width:520px;
+  min-width:120px;
 
-  word-break: break-word;
-  overflow-wrap: break-word;
+  width:fit-content;
+
+  box-sizing:border-box;
+
+  word-break:normal;
+  overflow-wrap:break-word;
 
   box-shadow:
   0 2px 8px rgba(0,0,0,0.05);
@@ -192,31 +203,29 @@ h1 {
 
 /* スマホ */
 
-@media (max-width: 600px) {
+@media (max-width:600px){
 
-  .container {
+  .container{
+    padding:16px;
+  }
 
-    padding: 16px;
+  h1{
+    font-size:24px;
+  }
+
+  .bubble{
+
+    max-width:75vw;
+
+    font-size:14px;
 
   }
 
-  h1 {
+  .icon,
+  .character-icon{
 
-    font-size: 24px;
-
-  }
-
-  .bubble {
-
-    max-width: 72%;
-    font-size: 14px;
-
-  }
-
-  .icon {
-
-    width: 48px;
-    height: 48px;
+    width:60px;
+    height:60px;
 
   }
 
@@ -308,7 +317,8 @@ h1 {
 <!-- 会話 -->
 
 <div class="chat-area">
-
+```
+```html
   <!-- ラル -->
 
   <div class="message-left">
@@ -369,13 +379,35 @@ h1 {
 
   </div>
 
-  <!-- パトシー -->
+  <!-- ラル（右側） -->
 
   <div class="message-right">
 
     <div>
 
       <div class="name right-name">
+        ラル
+      </div>
+
+      <div class="bubble">
+        ……そんなことないよ。
+      </div>
+
+    </div>
+
+    <img src="rr.png" class="icon">
+
+  </div>
+
+  <!-- パトシー -->
+
+  <div class="message-left">
+
+    <img src="pts.png" class="icon">
+
+    <div>
+
+      <div class="name">
         パトシー
       </div>
 
@@ -385,32 +417,71 @@ h1 {
 
     </div>
 
-    <img src="pts.png" class="icon">
-
   </div>
 
-  <!-- ラル -->
+  <!-- フラン -->
 
   <div class="message-left">
 
-    <img src="rr.png" class="icon">
+    <img src="hrn.png" class="icon">
 
     <div>
 
       <div class="name">
-        ラル
+        フラン
       </div>
 
       <div class="bubble">
-        ……もう、やめてよ。
+        ラルは昔からこういう話が苦手だから。
       </div>
 
     </div>
 
   </div>
 
+  <!-- シテラ -->
+
+  <div class="message-left">
+
+    <img src="sitera.png" class="icon">
+
+    <div>
+
+      <div class="name">
+        シテラ
+      </div>
+
+      <div class="bubble">
+        照れてる顔もかわいいんだけどね。
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ラル（右側） -->
+
+  <div class="message-right">
+
+    <div>
+
+      <div class="name right-name">
+        ラル
+      </div>
+
+      <div class="bubble">
+        だからやめてってば……。
+      </div>
+
+    </div>
+
+    <img src="rr.png" class="icon">
+
+  </div>
+
 </div>
 
 </div>
+
 </body>
 </html>
