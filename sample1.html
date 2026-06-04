@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -17,188 +17,132 @@ body{
 }
 
 .container{
-
   max-width:900px;
-
   margin:auto;
   padding:20px;
-
   background:white;
-
 }
 
 h1{
-
   margin-top:0;
   margin-bottom:25px;
-
   font-size:30px;
-
   border-bottom:1px solid #ddd;
   padding-bottom:10px;
-
 }
 
 /* 登場キャラ */
 
 .character-box{
-
   display:flex;
   flex-direction:column;
-
   gap:14px;
-
   margin-bottom:50px;
-
 }
 
 .character-mini{
-
   display:flex;
   align-items:center;
-
   gap:14px;
-
   padding:12px 0;
-
   border-top:1px solid #ddd;
-
 }
 
 .character-icon{
-
   width:70px;
   height:70px;
-
   border-radius:50%;
-
   object-fit:cover;
-
-  /* 顔を優先表示 */
   object-position:center top;
-
   flex-shrink:0;
-
 }
 
 .character-text{
-
   line-height:1.7;
-
 }
 
 .character-text a{
-
   color:#222;
-
   text-decoration:none;
-
   font-size:18px;
-
 }
 
 .character-text a:hover{
-
   text-decoration:underline;
-
 }
 
 /* 会話 */
 
 .chat-area{
-
   display:flex;
   flex-direction:column;
-
   gap:22px;
+}
 
+/* 時間表示 */
+
+.time-label{
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+  color:#666;
+  margin:28px 0;
+  letter-spacing:2px;
 }
 
 /* 左右共通 */
 
 .message-left,
 .message-right{
-
   display:flex;
   align-items:flex-start;
-
   gap:12px;
-
 }
 
 .message-right{
-
   justify-content:flex-end;
-
 }
 
 /* アイコン */
 
 .icon{
-
   width:64px;
   height:64px;
-
   border-radius:50%;
-
   object-fit:cover;
-
-  /* 顔を優先表示 */
   object-position:center top;
-
   flex-shrink:0;
-
 }
 
 /* 名前 */
 
 .name{
-
   font-size:13px;
-
   font-weight:bold;
-
   color:#666;
-
   margin-bottom:6px;
-
 }
 
 .right-name{
-
   text-align:right;
-
 }
 
 /* 吹き出し */
 
 .bubble{
-
   background:white;
-
   border:1px solid #e5e5e5;
-
   border-radius:16px;
-
   padding:14px 18px;
-
   line-height:1.8;
-
   display:inline-block;
-
   max-width:520px;
   min-width:120px;
-
   width:fit-content;
-
   box-sizing:border-box;
-
   word-break:normal;
   overflow-wrap:break-word;
-
-  box-shadow:
-  0 2px 8px rgba(0,0,0,0.05);
-
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
 }
 
 /* スマホ */
@@ -214,19 +158,14 @@ h1{
   }
 
   .bubble{
-
     max-width:75vw;
-
     font-size:14px;
-
   }
 
   .icon,
   .character-icon{
-
     width:60px;
     height:60px;
-
   }
 
 }
@@ -241,44 +180,12 @@ h1{
 <a href="npr1.html">トップ</a> ＞
 
 <h1>
-フルーフの休日
+ラルくんの観察日記
 </h1>
 
 <!-- 登場キャラクター -->
 
 <div class="character-box">
-
-  <div class="character-mini">
-
-    <img src="sitera@.png" class="character-icon">
-
-    <div class="character-text">
-
-      <a href="sitera.html">
-        <strong>シテラ</strong>
-      </a><br>
-
-      暇な時はよく他役員にちょっかいをかけている。
-
-    </div>
-
-  </div>
-
-  <div class="character-mini">
-
-    <img src="hrn@.png" class="character-icon">
-
-    <div class="character-text">
-
-      <a href="hrn.html">
-        <strong>フラン</strong>
-      </a><br>
-
-      最近はラルのお洋服をたくさん作ってあげている。
-
-    </div>
-
-  </div>
 
   <div class="character-mini">
 
@@ -290,23 +197,8 @@ h1{
         <strong>ラル</strong>
       </a><br>
 
-      寝るときもお風呂も毎日フランと一緒。
-
-    </div>
-
-  </div>
-
-  <div class="character-mini">
-
-    <img src="pts@.png" class="character-icon">
-
-    <div class="character-text">
-
-      <a href="pts.html">
-        <strong>パトシー</strong>
-      </a><br>
-
-      最近ちょっとずつ飛べるようになってきた。
+      お風呂も寝るときもフランと一緒。<br>
+      最近他フルーフ員の観察を始めているらしい。
 
     </div>
 
@@ -318,163 +210,44 @@ h1{
 
 <div class="chat-area">
 
-  <!-- ラル -->
+  <div class="time-label">
+ ──────── 8:00　　起床 ────────
+  </div>
+  
+  <div class="message-left">
 
-  <div class="message-right">
+    <img src="rr@.png" class="icon">
 
     <div>
 
-      <div class="name right-name">
+      <div class="name">
         ラル
       </div>
 
       <div class="bubble">
-        ……おねむだね
+        ……おねむだね。
       </div>
 
     </div>
+
+  </div>
+
+
+  <div class="message-left">
 
     <img src="rr@.png" class="icon">
 
-  </div>
-
-  <!-- フラン -->
-
-  <div class="message-left">
-
-    <img src="hrn@.png" class="icon">
-
     <div>
 
       <div class="name">
-        フラン
-      </div>
-
-      <div class="bubble">
-        ほんと、いつも眠そうだね。
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- シテラ -->
-
-  <div class="message-left">
-
-    <img src="sitera@.png" class="icon">
-
-    <div>
-
-      <div class="name">
-        シテラ
-      </div>
-
-      <div class="bubble">
-        ラルは寝てる時が一番かわいいよね。
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- ラル（右側） -->
-
-  <div class="message-right">
-
-    <div>
-
-      <div class="name right-name">
         ラル
       </div>
 
       <div class="bubble">
-        ……そんなことないよ。
+        今日も平和だなあ。
       </div>
 
     </div>
-
-    <img src="rr@.png" class="icon">
-
-  </div>
-
-  <!-- パトシー -->
-
-  <div class="message-left">
-
-    <img src="pts@.png" class="icon">
-
-    <div>
-
-      <div class="name">
-        パトシー
-      </div>
-
-      <div class="bubble">
-        あらあら、みんな優しいのね。
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- フラン -->
-
-  <div class="message-left">
-
-    <img src="hrn@.png" class="icon">
-
-    <div>
-
-      <div class="name">
-        フラン
-      </div>
-
-      <div class="bubble">
-        ラルは昔からこういう話が苦手だから。
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- シテラ -->
-
-  <div class="message-left">
-
-    <img src="sitera@.png" class="icon">
-
-    <div>
-
-      <div class="name">
-        シテラ
-      </div>
-
-      <div class="bubble">
-        照れてる顔もかわいいんだけどね。
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- ラル（右側） -->
-
-  <div class="message-right">
-
-    <div>
-
-      <div class="name right-name">
-        ラル
-      </div>
-
-      <div class="bubble">
-        だからやめてってば……。
-      </div>
-
-    </div>
-
-    <img src="rr@.png" class="icon">
 
   </div>
 
@@ -484,3 +257,4 @@ h1{
 
 </body>
 </html>
+
