@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>フルーフの休日</title>
+<title>ラルくんの観察日記</title>
 
 <style>
 
@@ -27,25 +26,22 @@ h1{
   margin-top:0;
   margin-bottom:25px;
   font-size:30px;
-  border-bottom:1px solid #ddd;
-  padding-bottom:10px;
 }
 
-/* 登場キャラ */
+/* 登場キャラ枠 */
 
 .character-box{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
+  border:1px solid #ddd;
+  border-radius:16px;
+  padding:16px;
   margin-bottom:50px;
+  background:#fafafa;
 }
 
 .character-mini{
   display:flex;
   align-items:center;
   gap:14px;
-  padding:12px 0;
-  border-top:1px solid #ddd;
 }
 
 .character-icon{
@@ -83,11 +79,11 @@ h1{
 
 .time-label{
   text-align:center;
-  font-size:22px;
-  font-weight:bold;
-  color:#666;
-  margin:28px 0;
-  letter-spacing:2px;
+  font-size:16px;
+  font-weight:normal;
+  color:#777;
+  margin:40px 0;
+  letter-spacing:1px;
 }
 
 /* 左右共通 */
@@ -168,6 +164,10 @@ h1{
     height:60px;
   }
 
+  .time-label{
+    font-size:14px;
+  }
+
 }
 
 </style>
@@ -211,9 +211,9 @@ h1{
 <div class="chat-area">
 
   <div class="time-label">
- ──────── 7:00　　起床 ────────
+    ──────── 7:00　起床 ────────
   </div>
-  
+
   <div class="message-left">
 
     <img src="rr@.png" class="icon">
@@ -231,8 +231,6 @@ h1{
     </div>
 
   </div>
-
-
 
 </div>
 
