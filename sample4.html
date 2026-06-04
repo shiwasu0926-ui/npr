@@ -14,41 +14,29 @@ body {
   font-family: sans-serif;
   color: #222;
 }
-
 .container {
-
   max-width: 900px;
-
   margin: auto;
   padding: 20px;
-
   background: white;
-
 }
-
 h1 {
-
   margin-top: 0;
   margin-bottom: 25px;
-
   font-size: 30px;
-
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-
+  border-bottom: none;
+  padding-bottom: 0;
 }
-
-/* 登場キャラ */
-
 .character-box {
 
   display: flex;
   flex-direction: column;
-
   gap: 14px;
-
   margin-bottom: 50px;
-
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 16px;
+  background: #fafafa;
 }
 
 .character-mini {
@@ -59,6 +47,10 @@ h1 {
   gap: 12px;
 
   padding: 12px 0;
+
+}
+
+.character-mini:not(:first-child) {
 
   border-top: 1px solid #ddd;
 
@@ -98,7 +90,6 @@ h1 {
 
 }
 
-/* 会話 */
 
 .chat-area {
 
@@ -109,7 +100,23 @@ h1 {
 
 }
 
-/* 左右共通 */
+
+
+.time-label {
+
+  text-align: center;
+
+  font-size: 15px;
+
+  font-weight: normal;
+
+  color: #888;
+
+  margin: 18px 0;
+
+  letter-spacing: 1px;
+
+}
 
 .message-left,
 .message-right {
@@ -127,7 +134,13 @@ h1 {
 
 }
 
-/* アイコン */
+.message-right .message-content {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
 
 .icon {
 
@@ -141,8 +154,6 @@ h1 {
   flex-shrink: 0;
 
 }
-
-/* 名前 */
 
 .name {
 
@@ -163,8 +174,6 @@ h1 {
   padding-left: 0;
 
 }
-
-/* 吹き出し */
 
 .bubble {
 
@@ -189,8 +198,6 @@ h1 {
   0 2px 8px rgba(0,0,0,0.05);
 
 }
-
-/* スマホ */
 
 @media (max-width: 600px) {
 
@@ -225,15 +232,13 @@ h1 {
 </style>
 </head>
 
-<body>
+  <body>
 
 <div class="container">
 
-<a href="npr2.html">トップ</a> ＞
+<a href="npr1.html">トップ</a> ＞
 
-<h1>
-誕生日を決めよう！
-</h1>
+<h1>誕生日を決めよう！</h1>
 
 <!-- 登場キャラクター -->
 
@@ -241,55 +246,7 @@ h1 {
 
   <div class="character-mini">
 
-    <img src="sitera.png" class="character-icon">
-
-    <div class="character-text">
-
-      <a href="sitera.html">
-        <strong>シテラ</strong>
-      </a><br>
-
-      暇な時はよく他役員にちょっかいをかけている。
-
-    </div>
-
-  </div>
-
-  <div class="character-mini">
-
-    <img src="hrn.png" class="character-icon">
-
-    <div class="character-text">
-
-      <a href="hrn.html">
-        <strong>フラン</strong>
-      </a><br>
-
-      最近はラルのお洋服をたくさん作ってあげている。
-
-    </div>
-
-  </div>
-
-  <div class="character-mini">
-
-    <img src="rr.png" class="character-icon">
-
-    <div class="character-text">
-
-      <a href="rr.html">
-        <strong>ラル</strong>
-      </a><br>
-
-      寝るときもお風呂も毎日フランと一緒。
-
-    </div>
-
-  </div>
-
-  <div class="character-mini">
-
-    <img src="pts.png" class="character-icon">
+    <img src="pts@.png" class="character-icon">
 
     <div class="character-text">
 
@@ -297,32 +254,63 @@ h1 {
         <strong>パトシー</strong>
       </a><br>
 
-      最近ちょっとずつ飛べるようになってきた。
+     誕生日が分からないらしい
 
     </div>
 
   </div>
 
+  <div class="character-mini">
+
+    <img src="hrn@.png" class="character-icon">
+
+    <div class="character-text">
+
+      <a href="hrn.html">
+        <strong>フラン</strong>
+      </a><br>
+
+   誕生日は献血の日
+
+    </div>
+
+  </div>
+<div class="character-mini">
+
+    <img src="rr@.png" class="character-icon">
+
+    <div class="character-text">
+
+      <a href="rr.html">
+        <strong>ラル</strong>
+      </a><br>
+
+    誕生日は世界人形の日
+
+    </div>
+
+  </div>
+  
 </div>
 
 <!-- 会話 -->
 
 <div class="chat-area">
 
-  <!-- ラル -->
+ 
 
-  <div class="message-left">
+  <div class="message-right">
 
-    <img src="rr.png" class="icon">
+    <img src="=pts@.png" class="icon">
 
     <div>
 
       <div class="name">
-        ラル
+        パトシー
       </div>
 
       <div class="bubble">
-        おねむだね。
+       あいうえお。
       </div>
 
     </div>
@@ -333,7 +321,7 @@ h1 {
 
   <div class="message-left">
 
-    <img src="hrn.png" class="icon">
+    <img src="hrn@.png" class="icon">
 
     <div>
 
@@ -342,58 +330,16 @@ h1 {
       </div>
 
       <div class="bubble">
-        ほんと、いつも眠そうだね。
+       かきくけこ
       </div>
 
     </div>
 
   </div>
 
-  <!-- シテラ -->
+<div class="message-left">
 
-  <div class="message-left">
-
-    <img src="sitera.png" class="icon">
-
-    <div>
-
-      <div class="name">
-        シテラ
-      </div>
-
-      <div class="bubble">
-        ラルは寝てる時が一番かわいいよね。
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- パトシー -->
-
-  <div class="message-right">
-
-    <div>
-
-      <div class="name right-name">
-        パトシー
-      </div>
-
-      <div class="bubble">
-        あらあら、みんな優しいのね。
-      </div>
-
-    </div>
-
-    <img src="pts.png" class="icon">
-
-  </div>
-
-  <!-- ラル -->
-
-  <div class="message-left">
-
-    <img src="rr.png" class="icon">
+    <img src="rr@.png" class="icon">
 
     <div>
 
@@ -402,15 +348,25 @@ h1 {
       </div>
 
       <div class="bubble">
-        ……もう、やめてよ。
+      さしすせそ
       </div>
 
     </div>
 
   </div>
 
-</div>
+  
+  <div class="time-label">
+    ─── 少し後 ───
+  </div>
 
-</div>
+  
+
+    </div>
+
+  </div>
+
+
+
 </body>
 </html>
