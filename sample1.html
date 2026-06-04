@@ -27,7 +27,7 @@ h1 {
   margin-bottom: 25px;
   font-size: 30px;
 
-  /* ←タイトル下の線を削除 */
+  /* タイトル下の線を削除 */
   border-bottom: none;
   padding-bottom: 0;
 }
@@ -43,7 +43,6 @@ h1 {
 
   margin-bottom: 50px;
 
-  /* ←枠追加 */
   border: 1px solid #ddd;
   border-radius: 14px;
   padding: 16px;
@@ -146,6 +145,16 @@ h1 {
 .message-right {
 
   justify-content: flex-end;
+
+}
+
+/* 右側の名前＋吹き出しを右寄せ */
+
+.message-right .message-content {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
 }
 
