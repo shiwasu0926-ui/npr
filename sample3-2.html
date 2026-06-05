@@ -1,1 +1,297 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>財布</title>
+
+<style>
+
+body {
+  margin: 0;
+  background: #f0f0f0;
+  font-family: sans-serif;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.character-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 50px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 16px;
+  background: #fafafa;
+}
+
+.character-mini {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.character-mini:not(:first-child) {
+  border-top: 1px solid #ddd;
+}
+
+.character-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.character-text {
+  line-height: 1.7;
+}
+
+.character-text a {
+  color: #222;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.character-text a:hover {
+  text-decoration: underline;
+}
+
+.chat-area {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.time-label {
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  color: #888;
+  margin: 18px 0;
+  letter-spacing: 1px;
+}
+
+.message-left,
+.message-right {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.message-right {
+  justify-content: flex-end;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-right .message-content {
+  align-items: flex-end;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.name {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 4px;
+  padding-left: 6px;
+}
+
+.right-name {
+  text-align: right;
+  padding-right: 6px;
+  padding-left: 0;
+}
+
+.bubble {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 14px 16px;
+  line-height: 1.8;
+
+  display: inline-block;
+
+  max-width: min(75vw, 700px);
+
+  box-sizing: border-box;
+
+  word-break: normal;
+  overflow-wrap: break-word;
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 600px) {
+
+  .container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .bubble {
+    max-width: 75vw;
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<p><a href="npr3.html">トップ</a> ＞</p>
+
+<h1>財布</h1>
+
+<!-- 登場キャラクター -->
+
+<div class="character-box">
+
+  <div class="character-mini">
+
+    <img src="yuusei@.png" class="character-icon">
+
+    <div class="character-text">
+      <a href="yuusei.html">
+        <strong>金蜜優生</strong>
+      </a><br>
+      顔だけはめちゃくちゃ良い
+    </div>
+
+  </div>
+
+  <div class="character-mini">
+
+    <img src="yuri@.png" class="character-icon">
+
+    <div class="character-text">
+       <strong>三陰由利</strong>
+     <br>
+      支払いはスムーズにできる電子マネー派
+    </div>
+
+  </div>
+
+  <div class="character-mini">
+
+    <img src="sinn@.png" class="character-icon">
+
+    <div class="character-text">
+      <strong>古江田真</strong>
+    <br>
+     袖が突っかかり財布の中を上手く漁れない
+    </div>
+
+  </div>
+
+</div>
+
+<!-- 会話 -->
+
+<div class="chat-area">
+
+   <div class="message-right">
+
+    <div class="message-content">
+
+      <div class="name right-name">
+       金蜜
+      </div>
+
+      <div class="bubble">
+        っせーな財布寄こせや
+      </div>
+
+    </div>
+
+    <img src="yuusei@.png" class="icon">
+
+  </div>
+
+  <div class="message-left">
+
+    <img src="yuri@.png" class="icon">
+
+    <div class="message-content">
+
+      <div class="name">
+        三陰
+      </div>
+
+      <div class="bubble">
+       うわうわうわキッモ
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="message-left">
+
+    <img src="sinn@.png" class="icon">
+
+    <div class="message-content">
+
+      <div class="name">
+      古江田
+      </div>
+
+      <div class="bubble">
+    な、仲良くしてくださいぃ…
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="time-label">
+    ─── 少し後 ───
+  </div>
+
+</div>
+
+</div>
+
+</body>
+</html> 
