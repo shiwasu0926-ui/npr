@@ -104,6 +104,8 @@ h1 {
 .message-content {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 
 .message-right .message-content {
@@ -139,8 +141,8 @@ h1 {
   line-height: 1.8;
 
   display: inline-block;
-  width: fit-content;
-  max-width: 600px;
+
+  max-width: min(75vw, 700px);
 
   box-sizing: border-box;
 
@@ -162,7 +164,7 @@ h1 {
   }
 
   .bubble {
-    max-width: 72%;
+    max-width: 75vw;
     font-size: 14px;
   }
 
@@ -189,6 +191,7 @@ h1 {
 <div class="character-box">
 
   <div class="character-mini">
+
     <img src="pts@.png" class="character-icon">
 
     <div class="character-text">
@@ -197,9 +200,11 @@ h1 {
       </a><br>
       誕生日が分からないらしい
     </div>
+
   </div>
 
   <div class="character-mini">
+
     <img src="hrn@.png" class="character-icon">
 
     <div class="character-text">
@@ -208,9 +213,11 @@ h1 {
       </a><br>
       誕生日は献血の日
     </div>
+
   </div>
 
   <div class="character-mini">
+
     <img src="rr@.png" class="character-icon">
 
     <div class="character-text">
@@ -219,6 +226,7 @@ h1 {
       </a><br>
       誕生日は世界人形の日
     </div>
+
   </div>
 
 </div>
@@ -227,7 +235,7 @@ h1 {
 
 <div class="chat-area">
 
-  <div class="message-right">
+   <div class="message-right">
 
     <div class="message-content">
 
@@ -290,5 +298,4 @@ h1 {
 </div>
 
 </body>
-</html>
-```
+</html> 
