@@ -6,218 +6,64 @@
 
 <title>紅き姫君</title>
 
+<meta name="robots" content="noindex, nofollow">
+
 <style>
 
-body {
-  margin: 0;
-  background: #f0f0f0;
-  font-family: sans-serif;
-  color: #222;
+body{
+  margin:0;
+  font-family:sans-serif;
+  background:#fff;
+  color:#222;
 }
 
-.container {
-
-  max-width: 900px;
-
-  margin: auto;
-  padding: 20px;
-
-  background: white;
-
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:24px;
 }
 
-h1 {
-
-  margin-top: 0;
-  margin-bottom: 25px;
-
-  font-size: 30px;
-
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-
+h1{
+  margin:0;
+  font-size:48px;
+  font-weight:bold;
+  line-height:1.3;
 }
 
-/* 登場キャラ */
-
-.character-box {
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 14px;
-
-  margin-bottom: 50px;
-
+.line{
+  margin:40px 0;
+  border:none;
+  border-top:1px solid #ddd;
 }
 
-.character-mini {
-
-  display: flex;
-  align-items: center;
-
-  gap: 12px;
-
-  padding: 12px 0;
-
-  border-top: 1px solid #ddd;
-
+.date{
+  font-size:18px;
+  color:#666;
+  margin-bottom:50px;
 }
 
-.character-icon {
-
-  width: 60px;
-  height: 60px;
-
-  border-radius: 50%;
-
-  object-fit: cover;
-
-  flex-shrink: 0;
-
+p{
+  font-size:18px;
+  line-height:2;
+  margin:0 0 28px;
 }
 
-.character-text {
-
-  line-height: 1.7;
-
+a{
+  color:#004cff;
 }
 
-.character-text a {
+@media(max-width:700px){
 
-  color: #222;
-
-  text-decoration: none;
-  font-size: 18px;
-
-}
-
-.character-text a:hover {
-
-  text-decoration: underline;
-
-}
-
-/* 会話 */
-
-.chat-area {
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 22px;
-
-}
-
-/* 左右共通 */
-
-.message-left,
-.message-right {
-
-  display: flex;
-  align-items: flex-start;
-
-  gap: 10px;
-
-}
-
-.message-right {
-
-  justify-content: flex-end;
-
-}
-
-/* アイコン */
-
-.icon {
-
-  width: 56px;
-  height: 56px;
-
-  border-radius: 50%;
-
-  object-fit: cover;
-
-  flex-shrink: 0;
-
-}
-
-/* 名前 */
-
-.name {
-
-  font-size: 12px;
-  color: #777;
-
-  margin-bottom: 4px;
-
-  padding-left: 6px;
-
-}
-
-.right-name {
-
-  text-align: right;
-
-  padding-right: 6px;
-  padding-left: 0;
-
-}
-
-/* 吹き出し */
-
-.bubble {
-
-  background: white;
-
-  border: 1px solid #e5e5e5;
-
-  border-radius: 16px;
-
-  padding: 14px 16px;
-
-  line-height: 1.8;
-
-  max-width: 75%;
-
-  box-sizing: border-box;
-
-  word-break: break-word;
-  overflow-wrap: break-word;
-
-  box-shadow:
-  0 2px 8px rgba(0,0,0,0.05);
-
-}
-
-/* スマホ */
-
-@media (max-width: 600px) {
-
-  .container {
-
-    padding: 16px;
-
+  .container{
+    padding:20px;
   }
 
-  h1 {
-
-    font-size: 24px;
-
+  h1{
+    font-size:34px;
   }
 
-  .bubble {
-
-    max-width: 72%;
-    font-size: 14px;
-
-  }
-
-  .icon {
-
-    width: 48px;
-    height: 48px;
-
+  p{
+    font-size:16px;
   }
 
 }
@@ -229,188 +75,31 @@ h1 {
 
 <div class="container">
 
-<a href="npr2.html">トップ</a> ＞
-
 <h1>
-紅き姫君
+ページタイトル
 </h1>
 
-<!-- 登場キャラクター -->
+<hr class="line">
 
-<div class="character-box">
+<div class="date">
+2026/06/04：更新
+</div>
 
-  <div class="character-mini">
+<p>
+フランは幸せ者なんですの。
+</p>
 
-    <img src="sitera.png" class="character-icon">
+<p>
+とっても幸せ者なんですの。
+</p>
 
-    <div class="character-text">
+<p>
+だから、そんな目で見るのはやめるんですの。
+</p>
 
-      <a href="sitera.html">
-        <strong>シテラ</strong>
-      </a><br>
 
-      暇な時はよく他役員にちょっかいをかけている。
-
-    </div>
-
-  </div>
-
-  <div class="character-mini">
-
-    <img src="hrn.png" class="character-icon">
-
-    <div class="character-text">
-
-      <a href="hrn.html">
-        <strong>フラン</strong>
-      </a><br>
-
-      最近はラルのお洋服をたくさん作ってあげている。
-
-    </div>
-
-  </div>
-
-  <div class="character-mini">
-
-    <img src="rr.png" class="character-icon">
-
-    <div class="character-text">
-
-      <a href="rr.html">
-        <strong>ラル</strong>
-      </a><br>
-
-      寝るときもお風呂も毎日フランと一緒。
-
-    </div>
-
-  </div>
-
-  <div class="character-mini">
-
-    <img src="pts.png" class="character-icon">
-
-    <div class="character-text">
-
-      <a href="pts.html">
-        <strong>パトシー</strong>
-      </a><br>
-
-      最近ちょっとずつ飛べるようになってきた。
-
-    </div>
-
-  </div>
 
 </div>
 
-<!-- 会話 -->
-
-<div class="chat-area">
-
-  <!-- ラル -->
-
-  <div class="message-left">
-
-    <img src="rr.png" class="icon">
-
-    <div>
-
-      <div class="name">
-        ラル
-      </div>
-
-      <div class="bubble">
-        おねむだね。
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- フラン -->
-
-  <div class="message-left">
-
-    <img src="hrn.png" class="icon">
-
-    <div>
-
-      <div class="name">
-        フラン
-      </div>
-
-      <div class="bubble">
-        ほんと、いつも眠そうだね。
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- シテラ -->
-
-  <div class="message-left">
-
-    <img src="sitera.png" class="icon">
-
-    <div>
-
-      <div class="name">
-        シテラ
-      </div>
-
-      <div class="bubble">
-        ラルは寝てる時が一番かわいいよね。
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- パトシー -->
-
-  <div class="message-right">
-
-    <div>
-
-      <div class="name right-name">
-        パトシー
-      </div>
-
-      <div class="bubble">
-        あらあら、みんな優しいのね。
-      </div>
-
-    </div>
-
-    <img src="pts.png" class="icon">
-
-  </div>
-
-  <!-- ラル -->
-
-  <div class="message-left">
-
-    <img src="rr.png" class="icon">
-
-    <div>
-
-      <div class="name">
-        ラル
-      </div>
-
-      <div class="bubble">
-        ……もう、やめてよ。
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
 </body>
 </html>
